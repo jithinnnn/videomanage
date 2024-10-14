@@ -1,0 +1,27 @@
+api call
+------------
+library - axios
+npm i axios
+
+async await
+-------------------
+without sync await
+
+asyncFunction =()=>{
+    asyncCode().then(data=>{
+        consol.lo(data)
+    })
+}
+
+=> with async await
+
+asyncFunction=async()=>{
+    const data = await asyncCode()
+    console.log(data)
+}
+
+state lifting
+---------------
+(state,funct)
+parent  -------child1 -- function
+        -------child2 -- state
